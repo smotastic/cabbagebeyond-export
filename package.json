@@ -1,0 +1,16 @@
+{
+  "name": "cabbeyondexport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "export-full": "firestore-export --accountCredentials cred.json --backupFile backups/myDatabase.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-firestore-import-export": "^1.1.0"
+  }
+}
