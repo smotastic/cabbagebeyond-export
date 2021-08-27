@@ -16,5 +16,6 @@ dependencies:
   args: ^2.2.0
   dotenv: ^3.0.0
   json_annotation: ^4.1.0
+  logger: ^1.1.0
   smartstruct: ^1.2.3+1
   supabase: ^0.2.4

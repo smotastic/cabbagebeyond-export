@@ -1,3 +1,5 @@
+import 'package:logger/logger.dart';
+
 import 'collections/ability/ability_importer.dart';
 import 'helper/config.dart';
 import 'helper/supabase_helper.dart';
