@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:supabase/supabase.dart';
 
+import 'helper/config.dart';
 import 'models.dart';
 
 abstract class Importer<F extends FirestoreModel, S extends SupabaseModel> {
@@ -20,12 +21,16 @@ abstract class Importer<F extends FirestoreModel, S extends SupabaseModel> {
       final jsonEntry = entry.value;
       final model = fromJson(jsonEntry);
       final supabasemodel = fromFirestore(model);
-      final response =
-          await client.from(from).upsert(supabasemodel.toJson()).execute();
-      if (response.error != null) {
-        print(response.error!.message);
+      if (Config.I.get('dry-run')) {
+        print(supabasemodel);
       } else {
-        print(response.data);
+        final response =
+            await client.from(from).upsert(supabasemodel.toJson()).execute();
+        if (response.error != null) {
+          print(response.error!.message);
+        } else {
+          print(response.data);
+        }
       }
     }
   }
