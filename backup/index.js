@@ -6,7 +6,7 @@ const fs = require('fs');
 
 firebase.initializeApp(firebaseConfig);
 
-const backupCollections = ['sw_abilities', 'sw_equipment', 'sw_forces', 'sw_handicaps', 'sw_races', 'sw_talents', 'sw_characters'];
+const backupCollections = ['sw_abilities', 'sw_equipment', 'sw_forces', 'sw_handicaps', 'sw_races', 'sw_talents', 'sw_characters', 'worlds'];
 
 backupCollections.forEach(col => {
     const collectionRef = firebase.firestore().collection(col);
