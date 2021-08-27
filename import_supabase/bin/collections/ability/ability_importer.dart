@@ -7,7 +7,7 @@ import 'models/ability_supabase.dart';
 
 class AbilityImporter extends Importer<AbilityFirestore, AbilitySupabase> {
   AbilityImporter(SupabaseClient client)
-      : super(client, 'abilities.json', 'ability');
+      : super(client, 'sw_abilities.json', 'ability');
 
   @override
   AbilityFirestore fromJson(Map<String, dynamic> json) {
