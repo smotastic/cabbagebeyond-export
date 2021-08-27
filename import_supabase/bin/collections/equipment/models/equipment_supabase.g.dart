@@ -9,7 +9,7 @@ part of 'equipment_supabase.dart';
 EquipmentSupabase _$EquipmentSupabaseFromJson(Map<String, dynamic> json) =>
     EquipmentSupabase(
       json['name'] as String,
-      json['description'] as String,
+      json['description'] as String?,
       json['damage'] as String?,
       json['requirements'] as String?,
       json['type'] as String?,

@@ -8,6 +8,7 @@ part 'talent_supabase.g.dart';
 class TalentSupabase extends SupabaseModel {
   final String name;
   final String description;
+  @JsonKey(name: 'rang_requirement')
   final String? rangRequirement;
   final String? requirements;
   final String? type;

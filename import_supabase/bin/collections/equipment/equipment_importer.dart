@@ -8,7 +8,7 @@ import 'models/equipment_supabase.dart';
 class EquipmentImporter
     extends Importer<EquipmentFirestore, EquipmentSupabase> {
   EquipmentImporter(SupabaseClient client)
-      : super(client, 'sw_equipment.json', 'power');
+      : super(client, 'sw_equipment.json', 'equipment');
 
   @override
   EquipmentFirestore fromJson(Map<String, dynamic> json) {

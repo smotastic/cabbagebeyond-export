@@ -7,7 +7,7 @@ part 'equipment_supabase.g.dart';
 @JsonSerializable()
 class EquipmentSupabase extends SupabaseModel {
   final String name;
-  final String description;
+  final String? description;
   final String? damage;
   final String? requirements;
   final String? type;

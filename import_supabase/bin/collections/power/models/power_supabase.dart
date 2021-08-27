@@ -8,11 +8,12 @@ part 'power_supabase.g.dart';
 class PowerSupabase extends SupabaseModel {
   final String name;
   final String description;
-  final String rangRequirement;
-  final String range;
-  final String shaping;
-  final String duration;
-  final String cost;
+  @JsonKey(name: 'rang_requirement')
+  final String? rangRequirement;
+  final String? range;
+  final String? shaping;
+  final String? duration;
+  final String? cost;
   final String setting_depr;
 
   PowerSupabase(this.name, this.description, this.rangRequirement, this.range,

@@ -8,11 +8,11 @@ part 'power_firestore.g.dart';
 class PowerFirestore extends FirestoreModel {
   final String name;
   final String description;
-  final String rangRequirement;
-  final String range;
-  final String shaping;
-  final String duration;
-  final String cost;
+  final String? rangRequirement;
+  final String? range;
+  final String? shaping;
+  final String? duration;
+  final String? cost;
   final String world_name;
 
   PowerFirestore(this.name, this.description, this.rangRequirement, this.range,

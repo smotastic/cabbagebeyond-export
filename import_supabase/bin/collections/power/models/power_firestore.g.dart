@@ -10,11 +10,11 @@ PowerFirestore _$PowerFirestoreFromJson(Map<String, dynamic> json) =>
     PowerFirestore(
       json['name'] as String,
       json['description'] as String,
-      json['rangRequirement'] as String,
-      json['range'] as String,
-      json['shaping'] as String,
-      json['duration'] as String,
-      json['cost'] as String,
+      json['rangRequirement'] as String?,
+      json['range'] as String?,
+      json['shaping'] as String?,
+      json['duration'] as String?,
+      json['cost'] as String?,
       json['world_name'] as String,
     );
 

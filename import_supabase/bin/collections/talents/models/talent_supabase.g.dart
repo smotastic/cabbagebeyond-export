@@ -10,7 +10,7 @@ TalentSupabase _$TalentSupabaseFromJson(Map<String, dynamic> json) =>
     TalentSupabase(
       json['name'] as String,
       json['description'] as String,
-      json['rangRequirement'] as String?,
+      json['rang_requirement'] as String?,
       json['requirements'] as String?,
       json['type'] as String?,
       json['addition'] as String?,
@@ -21,7 +21,7 @@ Map<String, dynamic> _$TalentSupabaseToJson(TalentSupabase instance) =>
     <String, dynamic>{
       'name': instance.name,
       'description': instance.description,
-      'rangRequirement': instance.rangRequirement,
+      'rang_requirement': instance.rangRequirement,
       'requirements': instance.requirements,
       'type': instance.type,
       'addition': instance.addition,

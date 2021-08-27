@@ -9,7 +9,7 @@ part of 'equipment_firestore.dart';
 EquipmentFirestore _$EquipmentFirestoreFromJson(Map<String, dynamic> json) =>
     EquipmentFirestore(
       json['name'] as String,
-      json['description'] as String,
+      json['description'] as String?,
       json['damage'] as String?,
       json['requirements'] as String?,
       json['type'] as String?,

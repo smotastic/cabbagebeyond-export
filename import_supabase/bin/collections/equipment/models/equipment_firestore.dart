@@ -7,7 +7,7 @@ part 'equipment_firestore.g.dart';
 @JsonSerializable()
 class EquipmentFirestore extends FirestoreModel {
   final String name;
-  final String description;
+  final String? description;
   final String? damage;
   final String? requirements;
   final String? type;
